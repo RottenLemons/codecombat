@@ -1,0 +1,2 @@
+let MAX_COOLDOWN;
+module.exports.MAX_COOLDOWN = (MAX_COOLDOWN = 9001);
