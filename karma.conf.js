@@ -30,14 +30,13 @@ module.exports = function(config) {
     ],
 
     preprocessors : {
-      '**/*.coffee': 'coffee',
+      '**/*.js': 'js',
       '**/javascripts/whole-app.js': 'coverage' // TODO: Webpack: get this working
     },
 
     // list of files to exclude
     exclude : [
       `**/*.${otherProductSuffix}.js`,
-      `**/*.${otherProductSuffix}.coffee`
     ],
 
     // test results reporter to use

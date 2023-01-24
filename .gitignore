@@ -87,7 +87,7 @@ bin/mongo/
 cocodb/
 
 # local settings
-login.coffee
+login.js
 
 # debugging
 *.heapsnapshot

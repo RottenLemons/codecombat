@@ -4,7 +4,7 @@
 README.md
 generators
 to_browserify.js
-config.coffee
+config.js
 bin
 karma.conf.js
 .gitignore
@@ -103,7 +103,7 @@ coverage/
 temp/
 
 # local settings
-login.coffee
+login.js
 Dockerfile
 
 # debugging

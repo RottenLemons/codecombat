@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const text = fs.readFileSync("./app/locale/en.coffee").toString();
+const text = fs.readFileSync("./app/locale/en.js").toString();
 
 const lines = text.split('\n');
 
@@ -21,4 +21,4 @@ const output = lines.map(function(line, index) {
   const rightHalf = line.slice(separator);
   return leftHalf + rot13(rightHalf);}).join('\n');
 
-fs.writeFileSync("./app/locale/rot13.coffee", output);
+fs.writeFileSync("./app/locale/rot13.js", output);

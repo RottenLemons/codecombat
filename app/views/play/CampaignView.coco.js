@@ -55,7 +55,7 @@ const AmazonHocModal = require('views/play/modal/AmazonHocModal');
 const PromotionModal = require('views/play/modal/PromotionModal');
 require('vendor/scripts/jquery-ui-1.11.1.custom');
 require('vendor/styles/jquery-ui-1.11.1.custom.css');
-const HoCModal = require('views/special_event/HoC2018InterstitialModal.coffee');
+const HoCModal = require('views/special_event/HoC2018InterstitialModal.js');
 const CourseVideosModal = require('views/play/level/modal/CourseVideosModal');
 const globalVar = require('core/globalVar');
 const paymentUtils = require('app/lib/paymentUtils');

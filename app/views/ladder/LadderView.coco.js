@@ -28,7 +28,7 @@ const MyMatchesTabView = require('./MyMatchesTabView');
 const SimulateTabView = require('./SimulateTabView');
 const LadderPlayModal = require('./LadderPlayModal');
 const CocoClass = require('core/CocoClass');
-const TournamentLeaderboard = require('./components/Leaderboard.coffee');
+const TournamentLeaderboard = require('./components/Leaderboard.js');
 
 const Clan = require('models/Clan');
 const CourseInstance = require('models/CourseInstance');

@@ -8,7 +8,7 @@
  * DS207: Consider shorter variations of null checks
  * Full docs: https://github.com/decaffeinate/decaffeinate/blob/main/docs/suggestions.md
  */
-require('./aether/aether.coffee');
+require('./aether/aether.js');
 
 const utils = require('core/utils');
 
@@ -46,7 +46,7 @@ module.exports.createAetherOptions = function(options) {
   };
   let parameters = functionParameters[options.functionName];
   if (!parameters) {
-    console.warn(`Unknown method ${options.functionName}: please add function parameters to lib/aether_utils.coffee.`);
+    console.warn(`Unknown method ${options.functionName}: please add function parameters to lib/aether_utils.js.`);
     parameters = [];
   }
   if (options.functionParameters && !_.isEqual(options.functionParameters, parameters)) {

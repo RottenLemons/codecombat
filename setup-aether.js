@@ -21,10 +21,10 @@ const PWD = process.env.PWD || __dirname;  // __dirname might be undesirable if 
 const aether_webpack_config = {
   context: path.resolve(PWD),
   entry: {
-    aether: "./app/lib/aether/aether.coffee",
+    aether: "./app/lib/aether/aether.js",
     // We need to create the html parser ourselves and move it ourselves into
     // `/javascripts/app/vendor/aether-html.js`
-    html: "./app/lib/aether/html.coffee"
+    html: "./app/lib/aether/html.ns"
   },
   output: {
     filename: "./aether/build/[name].js",
@@ -33,7 +33,7 @@ const aether_webpack_config = {
   module: {
     rules: [
       {
-        test: /\.coffee$/,
+        test: /\.js$/,
         use: ["coffee-loader"]
       },
       {
@@ -50,7 +50,7 @@ const aether_webpack_config = {
     ]
   },
   resolve: {
-    extensions: [".coffee", ".json", ".js"],
+    extensions: [".json", ".js"],
     fallback: {
       fs: false,
       buffer: require.resolve("buffer/")

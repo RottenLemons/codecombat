@@ -10,7 +10,7 @@ require('coffee-script')
 require('coffee-script/register')
 const product = process.env.COCO_PRODUCT || 'codecombat'
 const productSuffix = { codecombat: 'coco', ozaria: 'ozar' }[product]
-require.extensions[`.${productSuffix}.coffee`] = require.extensions['.coffee']
+require.extensions[`.${productSuffix}.js`] = require.extensions['.js']
 const CompileStaticTemplatesPlugin = require('./compile-static-templates')
 const { VueLoaderPlugin } = require('vue-loader')
 const PWD = process.env.PWD || __dirname
@@ -73,7 +73,7 @@ module.exports = (env) => {
         './vendor/scripts/coffeescript.js'
       ]),
       lodash: 'lodash', // For worker_world
-      aether: './app/lib/aether/aether.coffee' // For worker_world
+      aether: './app/lib/aether/aether.js' // For worker_world
       // esper: './bower_components/esper.js/esper.js',
       // vendor: './app/vendor.js'
     },

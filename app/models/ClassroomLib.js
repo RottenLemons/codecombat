@@ -1,4 +1,4 @@
-import { orderedCourseIDs } from 'app/core/utils.coffee'
+import { orderedCourseIDs } from 'app/core/utils.js'
 
 /**
  * This file includes separate static methods that are assigned to

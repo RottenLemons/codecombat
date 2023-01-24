@@ -124,7 +124,7 @@ const compile = function(contents, locals, filename, cb) {
     }
   });
 
-  const deps = ['static-mock.coffee'].concat(out.dependencies);
+  const deps = ['static-mock.js'].concat(out.dependencies);
   // console.log "Wrote to #{outFile}", deps
 
   // console.log {outFile}

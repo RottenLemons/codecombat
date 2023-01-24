@@ -11,7 +11,7 @@ fs = require('fs')
 parse = require('../node_modules/csv').parse;
 
 rawTranslations = fs.readFileSync(__dirname+'/de-github.csv', {encoding:'utf8'});
-deFileName = __dirname+'/../app/locale/de-DE.coffee'
+deFileName = __dirname+'/../app/locale/de-DE.js'
 deFileLines = fs.readFileSync(deFileName, {encoding:'utf8'}).split('\n')
 console.log('raw de', deFileLines.length, deFileLines.slice(0,100))
 

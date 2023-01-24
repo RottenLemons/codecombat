@@ -5,7 +5,7 @@
     },
     "watch": [
         "server_config.js",
-        "server_setup.coffee",
+        "server_setup.js",
         "app/schemas",
         "./server",
         "app/assets/main.html"

@@ -18,7 +18,7 @@ const localeSources = {};
 for (var kind in localeCodes) {
   var encoding;
   var code = localeCodes[kind];
-  localeSources[kind] = fs.readFileSync(path.join(__dirname, `../app/locale/${code}.coffee`), (encoding='utf8')).split('\n');
+  localeSources[kind] = fs.readFileSync(path.join(__dirname, `../app/locale/${code}.js`), (encoding='utf8')).split('\n');
 }
 
 for (let index = 0; index < localeSources.parent.length; index++) {
@@ -38,5 +38,5 @@ for (childKey of ['childA', 'childB', 'childC']) {
   if (!(childCode = localeCodes[childKey])) { continue; }
   var childLines = localeSources[childKey];
   var newContents = childLines.join('\n');
-  fs.writeFileSync(`app/locale/${childCode}.coffee`, newContents);
+  fs.writeFileSync(`app/locale/${childCode}.js`, newContents);
 }

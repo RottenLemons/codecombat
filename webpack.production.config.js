@@ -19,7 +19,7 @@ const smp = new SpeedMeasurePlugin({
 combos = {
   createjs: ['admin', 'editor', 'courses', 'clans', 'i18n', 'ladder', 'play', 'artisans'],
   d3: ['teachers', 'admin', 'ladder', 'editor'],
-  aether: ['play', 'editor', 'ladder'], // For now, there is *also* a separate aether bundle for world.coffee
+  aether: ['play', 'editor', 'ladder'], // For now, there is *also* a separate aether bundle for world.js
   skulpty: ['ladder', 'editor'],
   three: ['play', 'editor'],
   ace: ['admin', 'teachers', 'i18n', 'artisans', 'ladder', 'editor', 'play'],

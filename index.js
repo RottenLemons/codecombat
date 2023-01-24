@@ -6,10 +6,9 @@ if (majorVersion < 10) {
 if (majorVersion < 14) {
   console.warn('WARNING: This requires Node v14; please upgrade. Your version:', process.versions.node);
 }
-require('coffee-script');
-require('coffee-script/register');
+
 const product = process.env.COCO_PRODUCT || 'codecombat'
 const productSuffix = { codecombat: 'coco', ozaria: 'ozar' }[product]
-require.extensions[`.${productSuffix}.coffee`] = require.extensions['.coffee']
+require.extensions[`.${productSuffix}.js`] = require.extensions['.js']
 var server = require('./server');
 server.startServer();
